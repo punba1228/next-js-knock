@@ -5,7 +5,7 @@ interface FormButtonProps {
   isDisabled?: boolean;
 }
 
-const FormButton = (props: FormButtonProps) => {
+const FormButton: React.FC<FormButtonProps> = (props) => {
   return (
     <button
       onClick={props.clickEvent}
